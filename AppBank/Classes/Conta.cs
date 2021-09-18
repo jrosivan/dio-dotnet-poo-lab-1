@@ -20,7 +20,7 @@ namespace AppBank
         public bool Sacar(double valorSaque) {
             // validação de saldo suficiente...
             if (this.Saldo - valorSaque < ( this.Credito * -1 )) {
-                Console.WriteLine("Saldo insuficinete!");
+                Console.WriteLine("Saldo insuficiente!");
                 return false;
             }
             Console.WriteLine($"Conta.........: {this.Nome}");
